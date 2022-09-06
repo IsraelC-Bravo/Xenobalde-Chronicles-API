@@ -3,7 +3,7 @@ alert('working')
 document.querySelector('button').addEventListener('click', apiRequest)
 
 async function apiRequest(){
-    const rapperName = document.querySelector('input').value
+    const heroesName = document.querySelector('input').value
     try{
         const response = await fetch(`https://xenoblade-heroes-api.herokuapp.com/api/${heroesName}`)
         const data = await response.json()
