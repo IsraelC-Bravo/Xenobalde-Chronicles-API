@@ -9,11 +9,11 @@ async function apiRequest(){
         const data = await response.json()
 
         console.log(data)
-        document.querySelector('.name').innerText = data.name
-        document.querySelector('.age').innerText = data.age
-        document.querySelector('.species').innerText = data.species
-        document.querySelector('.birthPlace').innerText = data.birthPlace
-        document.querySelector('.game').innerText = data.game
+        document.querySelector('.name').innerText += ` ${data.name}`
+        document.querySelector('.age').innerText += ` ${data.age}`
+        document.querySelector('.species').innerText += ` ${data.species}`
+        document.querySelector('.birthPlace').innerText += ` ${data.birthPlace}`
+        document.querySelector('.game').innerText += ` ${data.game}`
     }catch(error){
         console.log(error)
     }
